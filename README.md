@@ -1,5 +1,5 @@
 # flow2-NodeRed
-Este es el segundo ejercicio usando NodeRed
+Este es el segundo ejercicio usando NodeRed.
 
 ## Introducción
 
@@ -7,7 +7,7 @@ El flow 2 es el segundo ejercicio a realizar  con NodeRed. El siguiente ejercici
 
 ## Material Necesario
 
-Para realizar este flow necesitas lo siguiente
+Para realizar este flow necesitas lo siguiente:
 
 - [Ubuntu 20.04](https://releases.ubuntu.com/20.04/)
 - [NodeJS](https://nodejs.org/es/)
@@ -38,7 +38,7 @@ Para ejecutar este flow, es necesario lo siguiente
 - Arrancar NodeRed con el comando node-red
 - Exportar el flow1 (trabajo anterior) e importarlo y cambiar el nombre a flow2.
 - Modificar el nodo Inject con intervalo de un segundo para mandar el TimeStamp
-- Por ultimo agregar un nodo function y en la pestaña On Message que colocara el siguiente codigo.
+- Por ultimo agregar un nodo function y en la pestaña "On Message" que colocará el siguiente codigo.
 
 // Lo que está después de “//” son comentarios // Crea un objeto Date a partir del payload enviado por timestamp var date = new Date(msg.payload); // Cambia el payload para que sea una fecha con formato msg.payload = date.toString(); // Regresa el mensaje para que se envíe al sigueinte nodo return msg;
 - Guardar cambios con Deploy
